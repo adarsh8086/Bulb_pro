@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<button id="turnOn">Turn on the light</button>
+
+<img id="myImage" src="images/bulb off.jpg" style="width:100px">
+
+<button id="turnOff">Turn off the light</button>
+
+<script>
+  // jQuery code for handling button clicks
+  $('#turnOn').click(function() {
+    $('#myImage').attr('src', 'images/bulb on.jpg');
+  });
+
+
+
+  $('#turnOff').click(function() {
+    $('#myImage').attr('src', 'images/bulb off.jpg');
+  });
+</script>
+
+</body>
+</html>
